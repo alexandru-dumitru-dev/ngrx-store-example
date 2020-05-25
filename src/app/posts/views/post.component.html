@@ -1,0 +1,24 @@
+<div class="container pb-5">
+  <div class="row" *ngIf="post | async as postItem">
+    <div class="col-12">
+      <h2>{{postItem.title}}</h2>
+      <p>{{postItem.content}}</p>
+      <hr>
+      <small>Votes: {{postItem.likes}}</small>
+      <br>
+      <hr>
+      <br>
+      <button (click)="upvote()" class="btn btn-sm mr-2">Upvote</button>
+      <button (click)="downvote()" class="btn btn-sm mr-2" >Downvote</button>
+      <button (click)="resetPost()" class="btn btn-sm ">Reset</button>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <button class="btn btn-sm" routerLink="edit">Edit</button>
+    </div>
+  </div>
+</div>
+
+
