@@ -1,4 +1,6 @@
-# MyApp
+#NgRx Store Simple Example
+
+This is a simple NgRx Store example and it is my first implementation of it.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.0-rc.1.
 
